@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #d1d1d1;
+  padding: 10px;
+  width: 240px;
+  text-align: center;
+  background-color: rgba(190, 190, 190, 0.514);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold; /* Agrega negritas a los títulos */
+  color: #ffffff; /* Cambia el color de los títulos */
+}
+
+.card p {
+  font-size: 16px;
+  margin: 5px 0; /* Ajusta los márgenes de los párrafos */
+}
+
+/* Estilo de los botones */
+.btnLike,
+.btnElim {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.4);
+  border:black;
+  border-style: ridge;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 100px;
+  font-size: 16px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btnLike:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.btnElim:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.imgCard {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card:not(:last-child) {
+  margin-right: 20px;
+}
+
+.btnLike span {
+  font-weight: bold;
+}
